@@ -1,0 +1,30 @@
+.tab__nav {
+}
+.tab__nav-list {
+}
+.tab__nav-item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.tab__nav-link {
+  display: block;
+  padding: 21px 20px;
+  border-radius: 12px;
+  background: rgb(248, 247, 252);
+  color: $tab-text-color;
+  font-family: $main-font;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: #f5f2ff;
+  }
+
+  &.active {
+    outline: 3px solid rgb(217, 217, 217);
+    background: rgb(255, 255, 255);
+  }
+}
