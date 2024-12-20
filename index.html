@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RT-sport</title>
+  <link rel="icon" href="images/favicon/about.ico" type="image/x-icon">
   <link rel="stylesheet" href="style/main.min.css">
 </head>
 
@@ -13,7 +14,7 @@
     <div class="container">
       <section class="about__section">
         <div class="about__img-box">
-          <img class="about__img" src="./images/png/about.png" alt="about-img">
+          <img class="about__img" src="images/png/about.png" alt="about-img">
         </div>
         <div class="about__text-box">
           <h1 class="main__title">Коротко о нас</h1>
@@ -55,7 +56,7 @@
           </ul>
         </nav>
         <div class="tab___content">
-          <div id="tab1">
+          <div class="tab__content-item active">
             <h2 class="tab__title">Производим с нуля</h2>
             <p class="tab__text mb-15">Мы уже упомянули, что мы производим все наше силовое и фитнес-оборудование в
               России,
@@ -75,11 +76,12 @@
               на материалах
               мы не экономим.</p>
             <figure class="mb-30">
-              <div class="tab__img-box-3 mb-15">
-                <img class="tab__img-box-3__img" src="https://via.placeholder.com/363x250" alt="">
-                <img class="tab__img-box-3__img" src="https://via.placeholder.com/363x250" alt="">
-                <img class="tab__img-box-3__img" src="https://via.placeholder.com/363x250" alt="">
+              <div class="tab__img-box d-none col-3 mb-15">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/363x250" alt="">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/363x250" alt="">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/363x250" alt="">
               </div>
+              <img src="images/png/tab1-3.1.png" class="tab__test-img" alt="тестовое изображение для контента">
               <figcaption class="tab__img-subtext">Используем только качественные материалы и фурнитуру</figcaption>
             </figure>
             <p class="tab__text mb-15">
@@ -116,12 +118,13 @@
               используем качественное сварочное оборудование, для создания высокопрочных сварных швов.
             </p>
             <figure class="mb-30">
-              <div class="tab__img-box-4 mb-15">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/209x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/250x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/313x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/313x250" alt="">
+              <div class="tab__img-box d-none col-4 mb-15 ">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/222x250" alt="">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/254x250" alt="">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/299x250" alt="">
+                <img class="tab__img-box__img" src="https://via.placeholder.com/299x250" alt="">
               </div>
+              <img src="images/png/tab1-3.2.png" class="tab__test-img" alt="тестовое изображение для контента">
               <figcaption class="tab__img-subtext">Фото с производства</figcaption>
             </figure>
             <p class="tab__text mb-30">Это также означает, что в ряде случаев наше оборудование нельзя просто
@@ -134,16 +137,17 @@
               Ростова-на-Дону в любое место, где вы находитесь.
             </p>
             <figure>
-              <div class="tab__img-box-4 v-4 mb-15">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/265x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/313x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/240x250" alt="">
-                <img class="tab__img-box-4__img" src="https://via.placeholder.com/265x250" alt="">
+              <div class="tab__img-box d-none v-4 mb-15">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=254&height=251" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=298&height=250" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=233&height=251" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=254&height=251" alt="">
               </div>
+              <img src="images/png/tab1-3.3.png" class="tab__test-img" alt="тестовое изображение для контента">
               <figcaption class="tab__img-subtext">Пример упаковки</figcaption>
             </figure>
           </div>
-          <div id="tab2">
+          <div class="tab__content-item">
             <h2 class="tab__title mb-30">Персонализация</h2>
             <p class="tab__text mb-15">Мы не храним товары на складе. Поскольку у нас есть более 60 моделей спортивных
               тренажеров и несколько цветов
@@ -177,7 +181,7 @@
               на наш
               взгляд, качество и персонализация оборудования несомненно стоят того, чтобы немного подождать.</p>
           </div>
-          <div id="tab3">
+          <div class="tab__content-item">
             <h2 class="tab__title mb-30">Отгрузка и доставка</h2>
             <p class="tab__text">Отгрузка и доставка оборудования RT-Sport зависят от того, какие варианты вы
               обсуждаете с региональным менеджером при
@@ -196,7 +200,7 @@
               использования стоит того.</p>
 
           </div>
-          <div>
+          <div class="tab__content-item">
             <h2 class="tab__title mb-30">Комплексное оснащение</h2>
             <p class="tab__text mb-15">И хотя мы сами производим сложное оборудование для силовых тренировок, мы также
               работаем с тщательно подобранными
@@ -237,14 +241,198 @@
               действительно будет
               соответствовать вашим потребностям.</p>
             <figure class="mb-30">
-              <div class="tab__img-box-4 mb-15">
-                <img class="tab__img-box-4__img" src="" width="18%" alt="">
-                <img class="tab__img-box-4__img" src="" width="20%" alt="">
-                <img class="tab__img-box-4__img" src="" width="24%" alt="">
-                <img class="tab__img-box-4__img" src="" width="24%" alt="">
+              <div class="tab__img-box col-4 d-none mb-15">
+                <img class="tab__img-box__img" src="" alt="">
+                <img class="tab__img-box__img" src="" alt="">
+                <img class="tab__img-box__img" src="" alt="">
+                <img class="tab__img-box__img" src="" alt="">
               </div>
+              <img src="images/png/tab4-4.1.png" class="tab__test-img" alt="тестовое изображение для контента">
               <figcaption class="tab__img-subtext">Некоторые из наших проектов</figcaption>
             </figure>
+          </div>
+          <div class="tab__content-item">
+            <h2 class="tab__title mb-30">Что мы предлагаем</h2>
+            <p class="tab__text mb-30">
+              В ассортименте интернет-магазина RT-Sport доступно для заказа более 60
+              наименований силовых тренажеров от производителя,
+              а также более 50 наименований тщательно отобранного нами оборудования для организации зон кардио,
+              аэробики, свободных
+              весов.
+            </p>
+            <figure class="mb-30">
+              <div class="tab5__img-box col-3 d-none mb-15">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+                <img class="tab5__img-box__img" src="images/png/tab1-1.png" alt="">
+              </div>
+              <img src="images/png/tab5-6.1.png" class="tab__test-img" alt="тестовое изображение для контента">
+              <figcaption class="tab__img-subtext">Пример упаковки</figcaption>
+            </figure>
+          </div>
+          <div class="tab__content-item">
+            <h2 class=" tab__title mb-30">Принципы и подход к делу</h2>
+            <p class="tab__text mb-15 border-l">Когда вы заказываете силовое оборудование в RT-Sport, вы не получаете
+              какой-то универсальный конструктор в коробке. Вы
+              получаете сверхпрочное оборудование, разработанное в соответствии с вашими потребностями, начиная с самой
+              его функции и
+              заканчивая законченным и персонализированным внешним видом.
+            </p>
+            <p class="tab__text mb-30">
+              Рассчитанное на длительный срок службы прочное силовое и фитнес-оборудование мы проектируем используя
+              программное
+              обеспечение САПР для максимальной прочности сварных швов, а не увеличивая количество болтов на сектор
+              соединения.
+            </p>
+            <figure class="mb-30">
+              <div class="tab__img-box d-none v-4 mb-15">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=254&height=251" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=298&height=250" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=233&height=251" alt="">
+                <img class="tab__img-box__img" src="https://images.placeholders.dev/?width=254&height=251" alt="">
+              </div>
+              <img src="images/png/tab6-4.1.png" class="tab__test-img" alt="тестовое изображение для контента">
+              <figcaption class="tab__img-subtext">Создание моделей</figcaption>
+            </figure>
+            <p class="tab__text mb-15 border-l">
+              Прочное оборудование — это безопасное оборудование, поэтому мы следим за тем, чтобы элементы нашей
+              продукции при
+              использовании не прогибались больше нормативов, и не имели слишком много болтов, которые необходимо
+              регулярно
+              затягивать. Вы можете быть уверены, что оборудование RT-Sport прослужит долгие годы при регулярном
+              обслуживании и уходе.
+            </p>
+            <p class="tab__text mb-15">
+              Помимо вышесказанного, у нас налажено долгосрочное активное взаимодействие со спортсменами, кинезиологами,
+              ортопедами
+              для того, чтобы наша продукция была максимально безопасной и предельно эффективной в использовании.
+            </p>
+            <p class="tab__text">
+              Более того, наши проектировщики обладают знаниями анатомии и физиологии человеческого тела, отлично
+              разбираются в теме
+              функционирования опорно-двигательного аппарата человека – подвижность суставов, работа основных групп
+              мышц, понимают
+              технику выполнения упражнений, а также, необходимые факторы для изолированной проработки целевых мышц в
+              упражнениях.
+            </p>
+          </div>
+          <div id="tab7" class="tab__content-item">
+            <h2 class="tab__title mb-30">История развития компании</h2>
+            <nav class="tab__inner-nav mb-30">
+              <ul class="tab__inner-list">
+                <li class="tab__inner-item"><a href="#!" class="tab__inner-link">2013</a></li>
+                <li class="tab__inner-item"><a href="#!" class="tab__inner-link">2015</a></li>
+                <li class="tab__inner-item"><a href="#!" class="tab__inner-link">2016</a></li>
+                <li class="tab__inner-item"><a href="#!" class="tab__inner-link">Сегодня</a></li>
+              </ul>
+            </nav>
+            <div class="tab__inner-content">
+              <div class="tab__inner-item" id="tab-inner1">
+                <div class="tab__inner-img"><img src="images/png/2015.png" alt=""></div>
+                <div>
+                  <p class="tab__text mb-15">
+                    У группы любителей тренировок для здоровья и развития физических качеств тела человека появилась
+                    идея
+                    производства
+                    спортивных тренажеров для занятия спортом в домашних условиях. В те годы доступного и одновременно
+                    высококачественного
+                    оборудования подобного рода на рынке было крайне мало. Попробовав сделать первые версии оборудования
+                    для себя, мы
+                    узнали, насколько большой спрос на данные изделия среди многочисленной армии любителей спорта нашего
+                    города и страны в
+                    целом. Это и подтолкнуло тех энтузиастов стать создателями компании.
+                  </p>
+                  <p class="tab__text mb-15">
+                    Основной ассортимент компании был представлен гимнастическими брусьями, а также, настенными, и чуть
+                    позже разработанными
+                    напольными турниками. По широкому ряду выпускаемой продукции и скорости развития компании, мы
+                    занимали
+                    одно из первых
+                    мест на Российском рынке в данном производственном сегменте.
+                  </p>
+                  <p class="tab__text">
+                    После постоянной оптимизации конструкций турников и получения их идеальных вариантов как по
+                    удобству,
+                    так и по
+                    эргономике, зародилось первое название компании - Turni4ok.ru. Первым турником, выпущенным именно
+                    серийно, стал турник
+                    Titan-2, который и сейчас можно приобрести на нашем сайте.
+
+                  </p>
+                </div>
+              </div>
+              <div class="tab__inner-item d-none" id="tab-inner2">
+                <div class="tab__inner-img"><img src="images/png/2016.png" alt=""></div>
+                <div>
+                  <p class="tab__text mb-15">
+                    Для лучшей узнаваемости нашего бренда компания переименована в РосТурник.
+                  </p>
+                  <p class="tab__text mb-15">
+                    В этот период нами разработано более сложное и более требовательное по нагрузкам оборудование
+                    тяжелого тренинга: силовые
+                    скамьи и стойки для проведения домашних тренировок.
+
+                  </p>
+                  <p class="tab__text">
+                    Модернизированные модели первых серийно выпускаемых домашних тренажеров и сейчас представлены в
+                    нашем ассортименте в
+                    нескольких вариациях, удовлетворяющих запросы как любителей фитнеса, так и брутальных бодибилдеров и
+                    пауэрлифтеров.
+                  </p>
+                </div>
+              </div>
+              <div class="tab__inner-item d-none" id="tab-inner3">
+                <div class="tab__inner-img"><img src="images/png/2016.png" alt=""></div>
+                <div>
+                  <p class="tab__text mb-15">
+                    Именно в этом году нами были разработаны и поставлены в серийное производство первые тренажеры для
+                    профессиональных
+                    тренировок.
+                  </p>
+                  <p class="tab__text mb-15">
+                    Приоритетный вектор развития компании переключается с домашнего оборудования на профессиональное.
+
+                  </p>
+                  <p class="tab__text mb-15">
+                    Название компании вновь меняется, но корни компании РосТурник, как дань её истории, мы оставляем и
+                    называем новую
+                    компанию RT-Sport. Этимология нового названия достаточно логична: R(Рос)T(Турник)-Sport.
+                  </p>
+                  <p class="tab__text">
+                    Начиная с этого года, буквально за 10 месяцев было разработано и добавлено в ассортимент более 10
+                    надёжных моделей
+                    тренажеров для тренажерных залов, включая коммерческие.
+                  </p>
+                </div>
+              </div>
+              <div class="tab__inner-item d-none" id="tab-inner4">
+                <div class="tab__inner-img"><img src="images/png/2016.png" alt=""></div>
+                <div>
+                  <p class="tab__text mb-15">
+                    На сегодняшний день, пройдя долгий путь совершенствования разрабатываемой и производимой нами
+                    продукции, мы предлагаем
+                    более 60 моделей высококачественного и надёжного спортивного оборудования собственного производства
+                    для
+                    профессионального и домашнего использования.
+                  </p>
+                  <p class="tab__text mb-15">
+                    Каждый новый созданный нами тренажер - это сотни часов скрупулёзного проектирования и нещадных
+                    проверок. И только после
+                    этого он добавляется в ассортимент нашей компании и предлагается вам.
+                  </p>
+                  <p class="tab__text">
+                    Сегодня у нас твёрдо заявлена миссия нашей компании – создавать максимальное качество силового
+                    оборудования для
+                    полноценного оснащения тренажерных залов любой площади, от небольших домашних спорт-уголков для
+                    тренировок до
+                    премиальных тренажёрных центров в несколько тысяч квадратов.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
