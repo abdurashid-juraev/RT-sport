@@ -159,10 +159,14 @@
   }
 }
 .tab__content-item {
+  display: none;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, display 0.3s ease allow-discrete;
-  &.active {
-    opacity: 1;
-    display: block;
-  }
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tab__content-item.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
