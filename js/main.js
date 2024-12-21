@@ -12,10 +12,12 @@ const body = document.querySelector("body");
 //--------------Main-Tab--------------------------------------------------
 tabBtns.forEach((item, index) => {
   item.addEventListener("click", () => {
+    //-----------------Remove-Active-Classes-------------------
     tabMobileContent.classList.remove("active");
     body.classList.remove("shadow");
     tabMobileBtn.classList.remove("active");
     tabBtns.forEach((btn) => btn.classList.remove("active"));
+    //--------------------------------------------------------
     item.classList.add("active");
     tabContentItems.forEach((contentItem) =>
       contentItem.classList.remove("active")
@@ -34,8 +36,8 @@ tabInnerBtns.forEach((item, index) => {
     tabInnerContentItems[index].classList.add("active");
   });
 });
-//---------------Mobile-Tab-------------------------------------------------
 
+//---------------Mobile-Tab-------------------------------------------------
 tabMobileBtn.addEventListener("click", () => {
   tabMobileContent.classList.toggle("active");
   body.classList.add("shadow");
@@ -46,3 +48,6 @@ tabCloseBtn.addEventListener("click", () => {
   body.classList.remove("shadow");
   tabMobileBtn.classList.remove("active");
 });
+//---------------AOS---------------------------------------------------------
+AOS.init();
+// window.addEventListener("load", () => {}, { once: true });
