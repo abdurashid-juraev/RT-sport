@@ -1,12 +1,55 @@
-// .tab__nav {
-// }
-// .tab__nav-list {
-// }
+.tab__nav {
+  padding: 60px;
+  border-radius: 40px 0px 0px 40px;
+  box-shadow: 49px 0px 108px 0px rgba(0, 0, 0, 0.01),
+    197px 0px 197px 0px rgba(0, 0, 0, 0.01),
+    444px 0px 266px 0px rgba(0, 0, 0, 0.01),
+    789px 0px 316px 0px rgba(0, 0, 0, 0), 1233px 0px 345px 0px rgba(0, 0, 0, 0);
+  background: rgb(255, 255, 255);
+  @media (max-width: 992px) {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform 0.2s ease-in, opacity 0.1s ease, visibility 0.1s ease;
+    z-index: 2;
+    transform: translate(0%, -30%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .tab__btn-box {
+    margin-bottom: 30px;
+  }
+  .tab__btn-sm {
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    .tab__btn-box {
+      display: none;
+    }
+  }
+  // display: none;
+  &.active {
+    transform: translate(0%, -70%);
+    opacity: 1;
+    visibility: visible;
+    position: sticky;
+    top: 70%;
+  }
+}
 .tab__nav-item {
   &:not(:last-child) {
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 }
+// .tab__nav-list {
+//   display: none;
+// }
 .tab__nav-link {
   display: block;
   padding: 21px 20px;
@@ -26,5 +69,11 @@
   &.active {
     outline: 3px solid rgb(217, 217, 217);
     background: rgb(255, 255, 255);
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 11px 20px;
   }
 }

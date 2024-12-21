@@ -37,6 +37,7 @@ a {
 img {
   display: block;
   width: 100%;
+  user-select: none;
 }
 button {
   outline: none;
